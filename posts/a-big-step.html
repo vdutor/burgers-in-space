@@ -18,6 +18,9 @@
     <link href="../css/clean-blog.min.css" rel="stylesheet">
     <link href="../css/burgers.css" rel="stylesheet">
 
+    <!-- Light Gallery -->
+    <link href="../vendor/light-gallery/css/lightgallery.css" rel="stylesheet">
+
     <!-- Custom Fonts -->
     <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -118,42 +121,6 @@
 
                 </div>
             </div>
-            <div class="row">
-              <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <a href="#img1">
-                <img class="thumb" src="/media/Museum/GOPR0411.JPG">
-                </a>
-                <!-- lightbox container hidden with CSS -->
-                <div class="lightbox" id="img1">
-                  <a href="#img3" class="light-btn btn-prev">prev</a>
-                    <a href="#_" class="btn-close">X</a>
-                    <img src="/media/Museum/GOPR0411.JPG">
-                  <a href="#img2" class="light-btn btn-next">next</a>
-                </div>
-
-                <a href="#img2">
-                <img class="thumb" src="/media/Museum/GOPR0408.JPG">
-                </a>
-                <!-- lightbox container hidden with CSS -->
-                <div class="lightbox" id="img2">
-                  <a href="#img1" class="light-btn btn-prev">prev</a>
-                    <a href="#_" class="btn-close">X</a>
-                    <img src="/media/Museum/GOPR0408.JPG">
-                  <a href="#img3" class="light-btn btn-next">next</a>
-                </div>
-
-                <a href="#img3">
-                <img class="thumb" src="/media/Museum/GOPR0409.JPG">
-                </a>
-                <!-- lightbox container hidden with CSS -->
-                <div class="lightbox" id="img3">
-                  <a href="#img2" class="light-btn btn-prev">prev</a>
-                    <a href="#_" class="btn-close">X</a>
-                    <img src="/media/Museum/GOPR0409.JPG">
-                  <a href="#img1" class="light-btn btn-next">next</a>
-                </div>
-              </div>
-            </div>
         </div>
     </article>
 
@@ -208,6 +175,23 @@
 
     <!-- Theme JavaScript -->
     <script src="../js/clean-blog.min.js"></script>
+
+    <!-- Light Gallery -->
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('#lightgallery').lightGallery();
+    });
+    </script>
+    <script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+    <script src="../vendor/light-gallery/js/lightgallery.js"></script>
+    <script src="../vendor/light-gallery/js/lg-fullscreen.js"></script>
+    <script src="../vendor/light-gallery/js/lg-thumbnail.js"></script>
+    <script src="../vendor/light-gallery/js/lg-video.js"></script>
+    <script src="../vendor/light-gallery/js/lg-autoplay.js"></script>
+    <script src="../vendor/light-gallery/js/lg-zoom.js"></script>
+    <script src="../vendor/light-gallery/js/lg-hash.js"></script>
+    <script src="../vendor/light-gallery/js/lg-pager.js"></script>
+    <script src="../vendor/light-gallery/js/jquery.mousewheel.min.js"></script>
 
 </body>
 

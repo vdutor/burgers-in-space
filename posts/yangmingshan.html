@@ -17,6 +17,9 @@
     <!-- Theme CSS -->
     <link href="../css/clean-blog.min.css" rel="stylesheet">
 
+    <!-- Light Gallery -->
+    <link href="../vendor/light-gallery/css/lightgallery.css" rel="stylesheet">
+
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -80,21 +83,46 @@
     <!-- Post Content -->
     <article>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-			<p>
-			Yangmingshan is a collection of peaks in Taiwan, located to the northeast of Taipei.
-			The park offers great sights on Taipei, raw nature hikes and some traditional hot springs.</p>
-			<!--<h2 class="section-heading">The Final Frontier</h2> -->
-<!--
-                    <a href="#">
-                        <img class="img-responsive" src="../img/post-sample-image.jpg" alt="">
-                    </a> 
-                    <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
 
--->
-                </div>
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p>Yangmingshan is a collection of peaks in Taiwan, located to the northeast of Taipei.
+                The park offers great sights on Taipei, raw nature hikes and some traditional hot springs.</p>
+            <!--<h2 class="section-heading">The Final Frontier</h2> -->
+            <!--<a href="#">
+                  <img class="img-responsive" src="../img/post-sample-image.jpg" alt="">
+                </a>
+                <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span> -->
+              </div>
             </div>
+
+            <div class="row">
+              <div class="demo-gallery">
+                  <ul id="lightgallery" class="list-unstyled row">
+                      <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="/media/Yangmingshan/GOPR0388.JPG 800" data-src="/media/Yangmingshan/GOPR0388.JPG" data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
+                          <a href="">
+                              <img class="img-responsive" src="/media/Yangmingshan/GOPR0388.JPG">
+                          </a>
+                      </li>
+                      <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="/media/Yangmingshan/GOPR0389.JPG 800" data-src="/media/Yangmingshan/GOPR0389.JPG" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                          <a href="">
+                              <img class="img-responsive" src="/media/Yangmingshan/GOPR0389.JPG">
+                          </a>
+                      </li>
+                      <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="/media/Yangmingshan/GOPR0390.JPG 800" data-src="/media/Yangmingshan/GOPR0390.JPG" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                          <a href="">
+                              <img class="img-responsive" src="/media/Yangmingshan/GOPR0390.JPG">
+                          </a>
+                      </li>
+                      <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="/media/Yangmingshan/GOPR0391.JPG 800" data-src="/media/Yangmingshan/GOPR0391.JPG" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                          <a href="">
+                              <img class="img-responsive" src="/media/Yangmingshan/GOPR0391.JPG">
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+            </div>
+
         </div>
     </article>
 
@@ -149,6 +177,23 @@
 
     <!-- Theme JavaScript -->
     <script src="../js/clean-blog.min.js"></script>
+
+    <!-- Light Gallery -->
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('#lightgallery').lightGallery();
+    });
+    </script>
+    <script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+    <script src="../vendor/light-gallery/js/lightgallery.js"></script>
+    <script src="../vendor/light-gallery/js/lg-fullscreen.js"></script>
+    <script src="../vendor/light-gallery/js/lg-thumbnail.js"></script>
+    <script src="../vendor/light-gallery/js/lg-video.js"></script>
+    <script src="../vendor/light-gallery/js/lg-autoplay.js"></script>
+    <script src="../vendor/light-gallery/js/lg-zoom.js"></script>
+    <script src="../vendor/light-gallery/js/lg-hash.js"></script>
+    <script src="../vendor/light-gallery/js/lg-pager.js"></script>
+    <script src="../vendor/light-gallery/js/jquery.mousewheel.min.js"></script>
 
 </body>
 
