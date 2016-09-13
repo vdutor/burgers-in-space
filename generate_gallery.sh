@@ -8,9 +8,9 @@ done
 for filename in *.{mp4,MP4}; do
   noextension="${filename%.*}"
   echo "
-  <li data-poster=\"video-poster2.jpg\" data-sub-html=\"\" data-html=\"#$noextension\" >
+  <a data-poster=\"video-poster2.jpg\" data-sub-html=\"\" data-html=\"#$noextension\" >
     <img src=\"$PWD/thumbs/$noextension.jpg\" />
-  </li>"
+  </a>"
 done
 for filename in *.{mp4,MP4}; do
   noextension="${filename%.*}"
