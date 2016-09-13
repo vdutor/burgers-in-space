@@ -2,14 +2,14 @@
 for filename in *.{jpg,JPG}; do
   echo "
   <a href=\"$PWD/$filename\">
-    <img class=\"img-responsive\" src=\"$PWD/thumbnail/$filename\">
+    <img class=\"img-responsive\" src=\"$PWD/thumbs/$filename\">
   </a>"
 done
 for filename in *.{mp4,MP4}; do
   noextension="${filename%.*}"
   echo "
   <li data-poster=\"video-poster2.jpg\" data-sub-html=\"\" data-html=\"#$noextension\" >
-    <img src=\"$PWD/thumbnail/$noextension.jpg\" />
+    <img src=\"$PWD/thumbs/$noextension.jpg\" />
   </li>"
 done
 for filename in *.{mp4,MP4}; do
