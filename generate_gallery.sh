@@ -12,7 +12,7 @@ for filename in *.{mp4,MP4}; do
   echo "
   <li class=\"col-xs-6 col-sm-4 col-md-3\" data-poster=\"$PWD/thumbs/$noextension.jpg\" data-sub-html=\"\" data-html=\"#$noextension\" >
     <a href=\"\">
-      <img src=\"$PWD/thumbs/$noextension.jpg\" />
+      <img class=\"img-responsive\" src=\"$PWD/thumbs/$noextension.jpg\" />
     </a>
   </li>"
 done
