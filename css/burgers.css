@@ -15,6 +15,11 @@
   background-color: #cccccc;
 }
 
+.img-gallery {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .thumb {
   max-height: 171px;
   border: solid 6px rgba(5, 5, 5, 0.8);
