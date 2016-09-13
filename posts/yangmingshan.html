@@ -92,7 +92,7 @@
                   From NTU a 1.5 hour of metro and bus is needed to get to the park.
                   </p>
 
-                  <div style="width: 100%; height: 400px;"></div>
+                  <div style="width: 100%; height: 400px;" id="map"></div>
                   <span class="caption text-muted">
                     Yangminshang is located to the northeast of Taipei. (1.5 hours from NTU)
                   </span>
@@ -100,12 +100,21 @@
                     function initMap() {
                     var mapDiv = document.getElementById('map');
                     var map = new google.maps.Map(mapDiv, {
-                    center: {lat: 44.540, lng: -78.546},
-                    zoom: 8
-                    });}
+                    center: {lat: 25.194251, lng: 121.5587476},
+                    zoom: 10
+                    });
+		    
+		    var marker = new google.maps.Marker({
+			    position: {lat: 25.194251, lng: 121.5587476},
+			    title:""
+		    });
+
+		    marker.setMap(map)
+			    ;
+		    }
                   </script>
                   <script async defer
-                    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3hDK5DGA_aplfDIOd3Nh-XgOLPwV5A2U&callback=initMap">
                   </script>
 
                   <h2 class="section-heading">The park</h2>
