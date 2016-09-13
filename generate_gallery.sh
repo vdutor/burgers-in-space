@@ -1,16 +1,20 @@
 #!/bin/bash
 for filename in *.{jpg,JPG}; do
   echo "
-  <a href=\"$PWD/$filename\">
-    <img class=\"img-responsive\" src=\"$PWD/thumbs/$filename\">
-  </a>"
+  <li class=\"col-xs-6 col-sm-4 col-md-3\" data-responsive=\"$PWD/$filename 800\" data-src=\"$PWD/$filename\" data-sub-html=\"\">
+    <a href=\"\">
+      <img class=\"img-responsive\" src=\"$PWD/thumbs/$filename\">
+    </a>
+  </li>"
 done
 for filename in *.{mp4,MP4}; do
   noextension="${filename%.*}"
   echo "
-  <a data-poster=\"video-poster2.jpg\" data-sub-html=\"\" data-html=\"#$noextension\" >
-    <img src=\"$PWD/thumbs/$noextension.jpg\" />
-  </a>"
+  <li data-poster=\"video-poster2.jpg\" data-sub-html=\"\" data-html=\"#$noextension\" >
+    <a href=\"\">
+      <img src=\"$PWD/thumbs/$noextension.jpg\" />
+    </a>
+  </li>"
 done
 for filename in *.{mp4,MP4}; do
   noextension="${filename%.*}"
