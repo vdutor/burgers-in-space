@@ -10,7 +10,7 @@ done
 for filename in *.{mp4,MP4}; do
   noextension="${filename%.*}"
   echo "
-  <li data-poster=\"video-poster2.jpg\" data-sub-html=\"\" data-html=\"#$noextension\" >
+  <li class=\"col-xs-6 col-sm-4 col-md-3\" data-poster=\"$PWD/thumbs/$noextension.jpg\" data-sub-html=\"\" data-html=\"#$noextension\" >
     <a href=\"\">
       <img src=\"$PWD/thumbs/$noextension.jpg\" />
     </a>
