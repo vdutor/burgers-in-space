@@ -14,7 +14,7 @@ for filename in *.{mp4,MP4}; do
 done
 
 echo "<div class=\"row\">"
-echo "  <div class=\"demo-gallery\">"
+echo "  <div class=\"gallery-wrapper\">"
 echo "    <ul id=\"lightgallery\" class=\"list-unstyled row\">"
 for filename in *.{jpg,JPG}; do
   echo "

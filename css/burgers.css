@@ -18,6 +18,11 @@
   background-image: url("https://scontent-hkg3-1.xx.fbcdn.net/v/t1.0-9/14141922_1073183756129221_3834911574038567204_n.jpg?oh=661efef94af98a02c3aa39925e0fc318&oe=5843A24F");
 }
 
+.gallery-wrapper {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
 .img-gallery {
   position: absolute;
   left: -1000%;
@@ -30,11 +35,28 @@
 }
 
 .li-gallery {
-  width: 250px;
-  height: 250px;
+  height: 200px;
   overflow: hidden;
-  margin: 10px;
+  margin: 0.5%;
   position: relative;
+}
+
+@media (min-width: 992px) {
+  .li-gallery {
+    width: 24%;
+  }
+}
+
+@media (min-width: 544px) and (max-width: 992px) {
+  .li-gallery {
+    width: 32%;
+  }
+}
+
+@media (max-width: 544px) {
+  .li-gallery {
+    width: 49%;
+  }
 }
 
 .thumb {
